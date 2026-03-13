@@ -184,7 +184,7 @@ onMounted(() => {
                                 <div class="w-14 h-14 misub-radius-lg flex items-center justify-center text-3xl bg-gray-50 dark:bg-gray-800 overflow-hidden"
                                     :class="isRecommended(client) ? 'ring-2 ring-indigo-400' : ''">
 <img v-if="client.icon && (client.icon.includes('/') || client.icon.startsWith('data:'))" :src="client.icon"
-                        :alt="client.name" class="w-full h-full object-cover rounded-lg" />
+                        :alt="client.name" class="w-full h-full object-cover rounded-lg p-1" />
                     <span v-else>{{ client.icon }}</span>
                                 </div>
 
