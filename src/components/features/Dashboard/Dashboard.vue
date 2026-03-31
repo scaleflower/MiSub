@@ -85,7 +85,7 @@ const handleQRCode = (id, type = 'subscription') => {
       const baseUrl = window.location.origin;
       // Using similar logic to useProfiles copy link
       const idToUse = profile.customId || profile.id;
-      qrCodeUrl.value = `${baseUrl}/sub/${token}/${idToUse}`; 
+      qrCodeUrl.value = `${baseUrl}/${token}/${idToUse}`; 
       qrCodeTitle.value = profile.name || '订阅组二维码';
       showQRCodeModal.value = true;
     }
